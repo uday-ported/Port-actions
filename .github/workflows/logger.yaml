@@ -5,6 +5,8 @@ on:
     inputs:
       cve:
         type: string
+      run_id:
+        type: string
      
 jobs:
   send_message:
