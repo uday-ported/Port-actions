@@ -1,4 +1,4 @@
-name: Deploy image to environment
+name: Action Logger
 
 on:
   workflow_dispatch:
