@@ -16,7 +16,7 @@ jobs:
         clientId: ${{ secrets.PORT_CLIENT_ID }}
         clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
         operation: PATCH_RUN
-        runId: ${{ inputs.run_id }}
+        runId: ${{ .run_id }}
         logMessage: |
            Starting action 😎
            
