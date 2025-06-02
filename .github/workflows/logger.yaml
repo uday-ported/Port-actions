@@ -3,9 +3,7 @@ name: Action Logger
 on:
   workflow_dispatch:
     inputs:
-      image:
-        type: string
-      environment:
+      cve:
         type: string
       run_id:
         type: string
