@@ -9,7 +9,7 @@ on:
         type: string
      
 jobs:
-  send_message:
+  zero_day_check:
     runs-on: ubuntu-latest
     steps:
     - name: Log issue creation
