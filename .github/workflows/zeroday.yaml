@@ -23,7 +23,17 @@ jobs:
            Starting action 😎
            
     # - name: Deploy image to environment
-    # Your logic here...
+    # To-Do: Snyk scan
+    - name: Zero day check
+      uses: port-labs/port-github-action@v1
+      with:
+        clientId: ${{ secrets.PORT_CLIENT_ID }}
+        clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
+        operation: PATCH_RUN
+        link: https://docs.getport.io/
+        runId: ${{ inputs.run_id }}
+        logMessage: |
+          Checking for CVE ${{ inputs.cve }} with Snyk
 
     - name: Log issue creation
       uses: port-labs/port-github-action@v1
