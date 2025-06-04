@@ -1,4 +1,4 @@
-name: Action Logger
+name: Flix Zeroday Scanner
 
 on:
   workflow_dispatch:
