@@ -40,6 +40,8 @@ jobs:
         runId: ${{ inputs.run_id }}
         logMessage: |
           Checking for CVE ${{ inputs.cve }} with Snyk
+        echo: Snyk target: ${{ inputs.snyk_target }}
+        echo: Repo: ${{ inputs.repo }}
 
     - name: Log issue creation
       uses: port-labs/port-github-action@v1
