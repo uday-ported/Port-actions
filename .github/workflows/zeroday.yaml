@@ -41,9 +41,7 @@ jobs:
         logMessage: |
           Checking for CVE ${{ inputs.cve }} with Snyk
     - name: Snyk Target and Repo
-      run: |
-          echo: "Snyk target: ${{ inputs.snyk_target }}"
-          echo: "Repo: ${{ inputs.repo }}"
+      run: echo "Repo: ${{ inputs.repo }}, Snyk Target: ${{ inputs.snyk_target }}"
 
     - name: Log issue creation
       uses: port-labs/port-github-action@v1
