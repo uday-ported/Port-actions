@@ -49,7 +49,7 @@ jobs:
     
     - name: ${{ inputs.cve }} check
       run: |
-        echo "This where I get to do a snyk scan"
+        echo "This where I get to do a snyk scan with snyk test --json"
 
     - name: Log issue creation
       uses: port-labs/port-github-action@v1
