@@ -7,6 +7,12 @@ on:
         type: string
       run_id:
         type: string
+      repo:
+        type: string
+      snyk_target:
+        type: string
+      pager_service:
+        type: string
      
 jobs:
   zero_day_check:
