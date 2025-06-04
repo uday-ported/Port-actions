@@ -44,6 +44,13 @@ jobs:
       run: |
         echo "Repo: ${{ inputs.repo }}, Snyk Target: ${{ inputs.snyk_target }}"
 
+    - name: Clone target repo
+      run: git clone https://github.com/${{ inputs.repo }}.git
+    
+    - name: ${{ inputs.cve }} check
+      run: |
+        echo "This where I get to do a snyk scan"
+
     - name: Log issue creation
       uses: port-labs/port-github-action@v1
       with:
